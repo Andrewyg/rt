@@ -1,18 +1,16 @@
 <style>
-#wp {
-overflow-x:auto
-overflow-y:hidden
-}
 
-#gh  {
-overflow-x:auto
-overflow-y:hidden
+body {
+    background-color: lightblue;
 }
-
+  
+.clip #wp {
+  clip: rect(0px,60px,200px,0px)
+  }
 </style>
 
 <body>
-<p id="wp"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a>
+<p id="wp" class="clip"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a>
 <br>
 <p id="gh"><a href='gh.html'>Go To Page</a>
 </body>
