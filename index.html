@@ -10,13 +10,18 @@ body {
 </style>
 
 <body>
+<button onclick="lock()">Try it</button>
+    <br><br><br><br><br>
 <p id="wp" class="clip"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a><button onclick="myFunction(wp)">Try it</button>
 <br>
 <p id="gh"><a href='gh.html'>Go To Page</a><button onclick="myFunction(gh)">Try it</button>
     </p>
     <script>
-        alert ("Entering")
-        document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
+       function lock() {
+           overflow:hidden
+            alert ("Entering")
+            document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
+       }
 function myFunction(a) {
     logic(a)
     
