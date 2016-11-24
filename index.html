@@ -17,25 +17,9 @@ body {
 <br>
 <p id="gh"><a href='gh.html'>Go To Page</a><button onclick="myFunction(gh)">Try it</button>
     </p>
-    <script>
-       function lock() {
-           overflow:hidden;
-            alert ("Entering");
-            document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
-       }
-function myFunction(a) {
-    logic(a);
     
-}
-function logic(id) {
-    if id=="wp" {
-        document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
-    }
-    if id=="gh" {
-        document.getElementById(id).style.clip = "rect(5px,10px,10px,05px)";
-    }
-}
-    
-    
-</script>   
+       <script type="text/javascript">
+    var id= <?php Print($idvar); ?>;
+</script>
+
 </body>
