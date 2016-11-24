@@ -10,6 +10,9 @@ body {
 </style>
 
 <body>
+    <?php
+$id = $_GET['id'];
+?> 
     <h1>HI</h1>
 <button onclick="lock()">Try it</button>
     <br><br><br><br><br>
@@ -20,6 +23,7 @@ body {
     
        <script type="text/javascript">
     var id= <?php Print($idvar); ?>;
+    alert (id)
 </script>
 
 </body>
