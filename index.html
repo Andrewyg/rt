@@ -10,21 +10,23 @@ body {
 </style>
 
 <body>
-<p id="wp" class="clip"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a>
+<p id="wp" class="clip"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a><button onclick="myFunction(wp)">Try it</button>
 <br>
-<p id="gh"><a href='gh.html'>Go To Page</a>
+<p id="gh"><a href='gh.html'>Go To Page</a><button onclick="myFunction(gh)">Try it</button>
     </p>
     <script>
+        alert ("Entering")
+        document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
 function myFunction(a) {
     logic(a)
     
 }
 function logic(id) {
     if id=="wp" {
-        document.getElementById(id).style.clip = "rect(0px,50px,50px,0px)";
+        document.getElementById(id).style.clip = "rect(0px,10px,10px,0px)";
     }
     if id=="gh" {
-        document.getElementById(id).style.clip = "rect(5px,50px,50px,05px)";
+        document.getElementById(id).style.clip = "rect(5px,10px,10px,05px)";
     }
 }
     
