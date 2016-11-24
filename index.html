@@ -2,15 +2,32 @@
 
 body {
     background-color: lightblue;
+        position: absolute;
+
 }
   
-.clip #wp {
-  clip: rect(0px,60px,200px,0px)
-  }
+
 </style>
 
 <body>
 <p id="wp" class="clip"><a href='https://602pic.wordpress.com/pic/'>Go To Page</a>
 <br>
 <p id="gh"><a href='gh.html'>Go To Page</a>
+    </p>
+    <script>
+function myFunction(a) {
+    logic(a)
+    
+}
+function logic(id) {
+    if id=="wp" {
+        document.getElementById(id).style.clip = "rect(0px,50px,50px,0px)";
+    }
+    if id=="gh" {
+        document.getElementById(id).style.clip = "rect(5px,50px,50px,05px)";
+    }
+}
+    
+    
+</script>   
 </body>
