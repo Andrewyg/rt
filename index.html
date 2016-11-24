@@ -22,8 +22,10 @@ $id = $_GET['id'];
     </p>
     
        <script type="text/javascript">
-    var id= <?php Print($idvar); ?>;
-    alert (id);
+           function lock() {
+                var id= <?php Print($idvar); ?>;
+                alert (id);
+           }
 </script>
 
 </body>
